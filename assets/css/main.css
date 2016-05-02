@@ -294,6 +294,7 @@ hr.small {
     }
 }
 
+
 /* Intro */
 
 .intro {
@@ -330,23 +331,24 @@ hr.small {
     width: auto;
 }
 
+
 /*Background*/
-
-
 
 .info-para-back {
     line-height: 36px;
 }
+
 .info-para-numbers {
-    font-size:48px;
+    font-size: 48px;
     font-weight: bold;
 }
 
-.info-heading-back{
-    font-size:36px;
+.info-heading-back {
+    font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
 }
+
 
 /*Technology*/
 
@@ -366,6 +368,22 @@ hr.small {
     margin-right: auto
 }
 
+/* Future Plans */
+
+.section-future {
+    /*background-color: #952DD1;*/
+    background-color: #641F8C;
+    background-color: #efefef;
+    color: #000000;
+    overflow: hidden;
+    padding: 80px 0;
+    position: relative;
+    /*text-align: center;*/
+    width: 100%;
+}
+
+
+
 
 /* Apply */
 
@@ -378,7 +396,6 @@ hr.small {
     /*text-align: center;*/
     width: 100%;
 }
-
 
 .section-apply-heading {
     /*font-family: 'Helvetica Neue';*/
