@@ -70,7 +70,7 @@ hr.small {
 }
 
 .header-navbar-logo {
-    background: url(/assets/img/flapp.png) no-repeat;
+    background: url(/assets/img/flapp_small.png) no-repeat;
     cursor: pointer;
     float: left;
     height: 60px;
