@@ -354,6 +354,14 @@ hr.small {
     width: auto;
 }
 
+.infographic {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 
 /* Apply */
 
