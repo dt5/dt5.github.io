@@ -82,7 +82,7 @@ hr.small {
 }
 
 .header-navbar-logo:after {
-    background: url('/assets/img/flapp_dark_small') no-repeat;
+    background: url('/assets/img/flapp_dark_small.png') no-repeat;
     bottom: 0;
     content: '';
     display: block;
