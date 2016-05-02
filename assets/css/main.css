@@ -316,15 +316,8 @@ hr.small {
     /*font-family: 'Helvetica Neue';*/
     color: #fff;
     font-size: 48px;
-    margin-bottom: 6px;
-    font-weight: bolder;
-}
-
-.info-heading-slogan {
-    color: #fff;
-    font-size: 36px;
     margin-bottom: 48px;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 .info-para {
@@ -337,6 +330,30 @@ hr.small {
     width: auto;
 }
 
+/*Background*/
+
+
+
+.info-para-back {
+    line-height: 36px;
+}
+
+.info-heading-back{
+    font-size:36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Technology*/
+
+.app-horizontal {
+    position: relative;
+    top: -105px;
+    left: -100px;
+    height: 600px;
+    width: auto;
+}
+
 
 /* Apply */
 
@@ -346,17 +363,10 @@ hr.small {
     overflow: hidden;
     padding: 80px 0;
     position: relative;
-    text-align: center;
+    /*text-align: center;*/
     width: 100%;
 }
 
-.section-apply-ekg {
-    left: 50%;
-    position: absolute;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
 
 .section-apply-heading {
     /*font-family: 'Helvetica Neue';*/
@@ -412,7 +422,7 @@ hr.small {
 
 .heading-faq {
     /*font-family: 'Helvetica Neue';*/
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 24px;
     text-align: center;
 }
