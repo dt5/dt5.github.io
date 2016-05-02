@@ -337,6 +337,10 @@ hr.small {
 .info-para-back {
     line-height: 36px;
 }
+.info-para-numbers {
+    font-size:48px;
+    font-weight: bold;
+}
 
 .info-heading-back{
     font-size:36px;

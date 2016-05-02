@@ -1,1 +1,1 @@
-Website for Flapp, an app that's changing the game for soft-tissue flap facial reconstructive surgeries.
+Website for flapp, an app that's changing the game for soft-tissue flap facial reconstructive surgeries.
