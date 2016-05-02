@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MedHacks - A Platform for 3D Local Soft-tissue Flap Design for Facial Reconstructive Surgery</title>
+    <title>Flapp - A Platform for 3D Local Soft-tissue Flap Design for Facial Reconstructive Surgery</title>
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="assets/crosslogo.ico">
+
+    <!-- Lity -->
+    <link href="assets/css/lity.css" rel="stylesheet">
+
 </head>
 <body id="page-top">
     <div class="header-navbar">
@@ -21,10 +25,7 @@
             <li class="header-navbar-item"><a href="background.html" class="header-navbar-link">Background</a></li>
             <li class="header-navbar-item"><a href="technology.html" class="header-navbar-link">Technology</a></li>
             <li class="header-navbar-item"><a href="about.html" class="header-navbar-link">About Us</a></li>
-            
-            <li class="header-navbar-item"><a href="#faq" class="header-navbar-link">FAQ</a></li>
-            <li class="header-navbar-item"><a href="#schedule" class="header-navbar-link">Schedule</a></li>
-            <li class="header-navbar-item"><a href="#sponsors" class="header-navbar-link">Sponsor</a></li>
+            <li class="header-navbar-item"><a href="contact.html" class="header-navbar-link">Contact</a></li>
         </ul>
     </div>
 
@@ -46,12 +47,16 @@
     <div id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center">
-                    <h1 class="descr-title info-heading">Flapp - Revolutionizing local tissue flap design</h1>
-                    <p class="lead info-para">What if the most creative minds channeled their focus into solving the most impactful problems of today? Imagine if we could apply the ingenuity that powers the most profound technology into the most fundamental of all human concerns: <strong>health</strong>. MedHacks is the start. Join us for our <strong>medical hackathon</strong> at the world’s pinnacle of medical care, Johns Hopkins University. </p>
-                    <p class="lead info-para">At MedHacks 2015, we're selecting the top innovative technologists, scientists, healthcare professionals, and engineers to build amazing things together. Hackers across all disciplines will unite to meet with the experts in every part of the medical field here at Johns Hopkins to <strong>develop their solutions to healthcare problems across the globe</strong>. At the end of the event, teams will have the opportunity to present their projects. Winners will be chosen by a board of judges.</p>
+                <div class="col-lg-6 about-text">
+                    <h1 class="descr-title info-heading">Flapp</h1>
+                    <h2 class="info-heading-slogan">Revolutionizing local tissue flap design</h2>
+                    <p class="lead info-para">Flapp was created to develop novel utilities and tools to simplify complexprocedures performed by doctors. We strive to change the medical landscape by integrating modern computer based modeling solutions with traditional medical instruction and practice. Our company aims to improve surgeon performance and patient satisfaction in hospitals all over
+                    the world. Flapp is developed with the intent of assisting facial reconstructive
+                    surgeons in the operating room. </p>
+                    <a class="lead info-para" href="https://www.youtube.com/watch?v=0YGQuGqPO1Q&feature=youtu.be" data-lity>iFrame Youtube</a>
+
                 </div>
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6">
                     <img src="assets/img/app1.png" class="app-one">
                 </div>
             </div>
@@ -362,6 +367,7 @@
     </div>
 
     <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/lity.js"></script>
     <script>
     $(function() {
 
@@ -480,70 +486,6 @@
         }
     });
     </script>
-    <script>
-        $(function() {
-
-            var ekg         = document.getElementById('ekg'),
-                path        = ekg.getElementsByTagName('path')[0],
-                totalLength = path.getTotalLength()
-                thumper     = document.getElementById('thumper'),
-                style       = document.createElement('style'),
-                resizeTimeout = null;
-
-            document.getElementsByTagName('head')[0].appendChild(style);
-            var stylesheet = style.sheet;
-
-            function resizeEkg() {
-
-                resizeTimeout = null;
-
-                var width = document.body.clientWidth + 200;
-
-                ekg.setAttribute('width', width);
-
-                var viewBox = ekg.getAttribute('viewBox').split(' ');
-                viewBox[2] = width;
-                ekg.setAttribute('viewBox', viewBox.join(' '));
-
-                var side = ((width - 61.045) / 2).toFixed(3);
-
-                path.setAttribute('d', 'M0 39h' + side + 'l2.798 -5.740l5.525 10.763l12.629 -48.956l13.705 71.031l12.315 -35.070l4.691 14.717l5.727 -13.101l3.655 5.925h' + side);
-
-                totalLength = path.getTotalLength();
-                path.setAttribute('stroke-dasharray', (totalLength - 100).toFixed(3) + ' 100');
-
-                while(stylesheet.cssRules.length > 0) {
-
-                    stylesheet.deleteRule(0);
-                }
-
-                var animation = 'ekg { 0% { stroke-dashoffset: ' + totalLength.toFixed(3) + '; } 100% { stroke-dashoffset: 0; } }'
-                try { stylesheet.insertRule('@-webkit-keyframes ' + animation, 0); } catch(e) {}
-                try { stylesheet.insertRule('@keyframes ' + animation, 0); } catch(e) {}
-
-                var duration = totalLength / 350;
-                path.style.webkitAnimationDuration = duration + 's';
-                path.style.animationDuration       = duration + 's';
-            }
-
-            resizeEkg();
-
-            path.style.webkitAnimation = 'ekg 5.7s ease-in infinite';
-            path.style.animation       = 'ekg 5.7s ease-in infinite';
-
-            $(window).on('resize', function() {
-
-                if(resizeTimeout !== null) {
-
-                    clearTimeout(resizeTimeout);
-                }
-
-                resizeTimeout = setTimeout(resizeEkg, 30);
-            });
-        });
-    </script>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59988687-1', 'auto');ga('send', 'pageview');
-    </script>
+    
 </body>
 </html>

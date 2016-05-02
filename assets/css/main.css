@@ -70,7 +70,7 @@ hr.small {
 }
 
 .header-navbar-logo {
-    background: url(/assets/img/flapp_small.png) no-repeat;
+    background: url('/assets/img/flapp_small_light.png') no-repeat;
     cursor: pointer;
     float: left;
     height: 60px;
@@ -82,7 +82,7 @@ hr.small {
 }
 
 .header-navbar-logo:after {
-    background: url('/assets/img/logo_dark.png') no-repeat;
+    background: url('/assets/img/flapp_small_dark') no-repeat;
     bottom: 0;
     content: '';
     display: block;
@@ -584,11 +584,23 @@ hr.small {
     }
 }
 
+.about-text {
+    padding-top: 60px;
+}
+
 .info-heading {
     /*font-family: 'Helvetica Neue';*/
     color: #fff;
+    font-size: 48px;
+    margin-bottom: 6px;
+    font-weight: bolder;
+}
+
+.info-heading-slogan {
+    color: #fff;
     font-size: 36px;
     margin-bottom: 48px;
+    font-weight: lighter;
 }
 
 .info-para {
