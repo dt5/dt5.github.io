@@ -9,6 +9,8 @@
 html,
 body {
     height: 100%;
+    /*background-color: #952dd1;*/
+    background-color: #ca95e8;
 }
 
 body {
@@ -23,9 +25,19 @@ body {
     opacity: 0.8;
 }
 
+
+
+.navbar-fixed-top .nav {
+    padding: 5px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 7.5px 15px;
+}
+
 /* Home Page Carousel */
 
-header.carousel {
+/*header.carousel {
     height: 50%;
 }
 
@@ -40,7 +52,21 @@ header.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
-}
+}*/
+
+/*header*/
+/*header {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff
+}*/
 
 /* 404 Page Styles */
 
